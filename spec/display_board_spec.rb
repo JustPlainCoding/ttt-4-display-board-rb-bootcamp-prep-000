@@ -154,7 +154,7 @@ describe "#display_board in 'lib/display_board.rb" do
       # entirely filled with Os?
       board = ["O", "O", "O", "O", "O", "O", "O ", "O"]
       
-      ouput = capture_puts{display_board(board) }
+      ouput = capture_puts{ display_board(board) }
       rows = output.split("\n")
       
       expect(rows[0]).to eq(" O | O | O ")
